@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penguin Fashion</title>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/8d34d879b2.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS Config -->
@@ -14,11 +19,48 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              titleorange: "#FABE4C",
+              titledeepblack: "#363958",
+              buttonbg: "#A4BC46",
+              headerbg: "#FFFBF0",
             },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <!-- Be The Penguins of Winter -->
+    <header class="pl-3 sm:pb-8 pt-8 bg-headerbg">
+      <section
+        class="container flex flex-col justify-center align-center sm:flex-row"
+      >
+        <div>
+          <h1
+            class="text-5xl uppercase font-medium leading-normal text-titleorange"
+          >
+            Be the Penguins
+          </h1>
+          <h1
+            class="text-5xl uppercase font-medium leading-normal text-titledeepblack"
+          >
+            of Winter
+          </h1>
+          <p class="mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <button class="px-6 py-3 bg-buttonbg rounded-lg text-white uppercase">
+            <i class="fas fa-shopping-cart"></i> Buy Now
+          </button>
+        </div>
+
+        <div class="mt-4 sm:mt-0">
+          <img src="images/model.png" />
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
